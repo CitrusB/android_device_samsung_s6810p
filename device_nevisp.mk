@@ -41,8 +41,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-        device/samsung/nevisp/media_codecs.xml:system/etc/media_codecs.xml \
-        device/samsung/nevisp/media_profiles.xml:system/etc/media_profiles.xml
+        device/samsung/nevisp/prebuilt/media_codecs.xml:system/etc/media_codecs.xml \
+        device/samsung/nevisp/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 # Multisim-toggle app © Shubhang Rathore
 PRODUCT_COPY_FILES += \
