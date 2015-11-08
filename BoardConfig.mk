@@ -1,8 +1,5 @@
 USE_CAMERA_STUB := true
 
-# legacy MMAP 
-BOARD_USES_LEGACY_MMAP := true
-
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 
