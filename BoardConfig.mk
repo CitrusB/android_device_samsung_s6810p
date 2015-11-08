@@ -44,7 +44,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := neon
 
 # Skip droiddoc build to save build time
-BOARD_SKIP_ANDROID_DOC_BUILD := true
+#BOARD_SKIP_ANDROID_DOC_BUILD := true
 
 # Add h/w acceleration in browser
 ENABLE_WEBGL := true
