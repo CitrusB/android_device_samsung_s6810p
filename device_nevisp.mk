@@ -24,7 +24,8 @@ PRODUCT_COPY_FILES += \
 	device/samsung/nevisp/recovery/init.bt.rc:root/init.bt.rc \
 	device/samsung/nevisp/recovery/ueventd.rhea_ss_nevisp.rc:root/ueventd.rhea_ss_nevisp.rc \
         device/samsung/nevisp/recovery/init.recovery.rhea_ss_nevisp.rc:root/init.recovery.rhea_ss_nevisp.rc \
-	device/samsung/nevisp/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp 
+	device/samsung/nevisp/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp \
+	device/samsung/nevisp/recovery/init.fix.sh:root/init.fix.sh
 
 # Prebuilt Kernel Related Stuff
 LOCAL_KERNEL := device/samsung/nevisp/kernel/zImage
