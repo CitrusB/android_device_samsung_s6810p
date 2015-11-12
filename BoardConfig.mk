@@ -65,7 +65,7 @@ BOARD_USE_LEGACY_TOUCHSCREEN := true
 # Power
 TARGET_PROVIDES_POWER_HAL := true
 
-# Kernel
+# Kernel - use arm-eabi-4.6 toolchain to build it
 TARGET_KERNEL_SOURCE := kernel/samsung/nevisp
 TARGET_KERNEL_CONFIG := cyanogenmod_nevisp_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 mem=456M androidboot.console=ttyS1 gpt v3d_mem=67108864 pmem=24M@0x9E800000

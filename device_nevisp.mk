@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/nevisp/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp \
 	device/samsung/nevisp/recovery/init.fix.sh:root/init.fix.sh
 
-# Prebuilt Kernel Related Stuff
+# Prebuilt Kernel Related Stuff - built with arm-eabi-4.6 toolchain
 #LOCAL_KERNEL := device/samsung/nevisp/kernel/zImage
 #
 #PRODUCT_COPY_FILES += \
