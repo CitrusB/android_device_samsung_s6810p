@@ -44,7 +44,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := neon
 
 # Skip droiddoc build to save build time
-#BOARD_SKIP_ANDROID_DOC_BUILD := true
+BOARD_SKIP_ANDROID_DOC_BUILD := true
 
 # Add h/w acceleration in browser
 ENABLE_WEBGL := true
@@ -56,7 +56,7 @@ TARGET_FORCE_CPU_UPLOAD := true
 
 # FM Radio
 BOARD_HAVE_FM_RADIO := true
-BOARD_FM_DEVICE := bcm4330
+BOARD_FM_DEVICE := bcm4334
 BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 
 # Touch screen compatibility for JB
@@ -105,7 +105,7 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER        := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_bcmdhd
 BOARD_WLAN_DEVICE           := bcmdhd
-BOARD_WLAN_DEVICE_REV       := bcm4330
+BOARD_WLAN_DEVICE_REV       := bcm4334
 WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
