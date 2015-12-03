@@ -24,8 +24,8 @@ PRODUCT_COPY_FILES += \
 	device/samsung/nevisp/recovery/init.bt.rc:root/init.bt.rc \
 	device/samsung/nevisp/recovery/ueventd.rhea_ss_nevisp.rc:root/ueventd.rhea_ss_nevisp.rc \
         device/samsung/nevisp/recovery/init.recovery.rhea_ss_nevisp.rc:root/init.recovery.rhea_ss_nevisp.rc \
-	device/samsung/nevisp/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp \
-	device/samsung/nevisp/recovery/init.fix.sh:root/init.fix.sh
+	device/samsung/nevisp/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp
+#	device/samsung/nevisp/recovery/init.fix.sh:root/init.fix.sh
 
 # Prebuilt Kernel Related Stuff - built with arm-eabi-4.6 toolchain
 #LOCAL_KERNEL := device/samsung/nevisp/kernel/zImage
@@ -46,8 +46,8 @@ PRODUCT_COPY_FILES += \
         device/samsung/nevisp/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 # Multisim-toggle app © Shubhang Rathore
-PRODUCT_COPY_FILES += \
-        device/samsung/nevisp/multisim/MultiSIM-Toggle.apk:system/app/MultiSIM-Toggle.apk
+#PRODUCT_COPY_FILES += \
+#        device/samsung/nevisp/multisim/MultiSIM-Toggle.apk:system/app/MultiSIM-Toggle.apk
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
@@ -167,9 +167,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ## Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.force_highendgfx=1 \
-    dalvik.vm.dex2oat-filter=interpret-only \
-    dalvik.vm.image-dex2oat-filter=speed
+    persist.sys.force_highendgfx=1
 
 # KSM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -177,7 +175,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # MTP
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+    persist.sys.usb.config=mtp,acm
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
