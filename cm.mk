@@ -2,21 +2,21 @@
 $(call inherit-product, vendor/cm/config/telephony.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := GalaxyFame
+PRODUCT_RELEASE_NAME := FAME_S6810
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/nevisp/device_nevisp.mk)
+$(call inherit-product, device/samsung/s6810/device_s6810.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := nevisp
-PRODUCT_NAME := cm_nevisp
+PRODUCT_DEVICE := s6810
+PRODUCT_NAME := cm_s6810
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-S6810P
 PRODUCT_MANUFACTURER := samsung
 
-#Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=nevisp BUILD_FINGERPRINT=samsung/nevispxx/nevisp:4.1.2/JZO54K/S6810PXXAMJ1:user/release-keys PRIVATE_BUILD_DESC="nevisp-user 4.1.2 JZO54K S6810PXXAMJ1 release-keys"
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-S6810P TARGET_DEVICE=GT-S6810P BUILD_FINGERPRINT=samsung/GT-S6810P/GT-S6810P:4.1.2/JZO54K/S6810PXXAMJ1:user/release-keys PRIVATE_BUILD_DESC="GT-S6810P-user 4.1.2 JZO54K S6810PXXAMJ1 release-keys"
 
