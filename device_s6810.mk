@@ -175,7 +175,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # MTP
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,acm
+    persist.sys.usb.config=mtp
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
