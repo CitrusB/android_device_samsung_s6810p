@@ -108,7 +108,7 @@ a texture and possibly other code, so just DON'T USE THIS QUIRK.
 <MediaCodec name="OMX.ffmpeg.atrial.decoder" type="audio/ffmpeg" />
 
 <!-- ffmpeg video codecs -->
-<MediaCodec name="OMX.ffmpeg.mpeg2v.decoder" type="video/mpeg2" />
+<MediaCodec name="OMX.ffmpeg.mpeg2.decoder" type="video/mpeg2" />
 <MediaCodec name="OMX.ffmpeg.h263.decoder" type="video/3gpp" />
 <MediaCodec name="OMX.ffmpeg.mpeg4.decoder" type="video/mp4v-es" />
 <MediaCodec name="OMX.ffmpeg.wmv.decoder" type="video/x-ms-wmv" />
