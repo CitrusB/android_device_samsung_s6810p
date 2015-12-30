@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from nevisp device
-$(call inherit-product, device/samsung/s6810/device_s6810.mk)
+$(call inherit-product, device/samsung/s6810/device_s6810p.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_s6810
-PRODUCT_DEVICE := s6810
+PRODUCT_NAME := full_s6810p
+PRODUCT_DEVICE := s6810p
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-S6810P

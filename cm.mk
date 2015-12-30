@@ -2,17 +2,17 @@
 $(call inherit-product, vendor/cm/config/telephony.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := FAME_S6810
+PRODUCT_RELEASE_NAME := FAME_S6810P
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/s6810/device_s6810.mk)
+$(call inherit-product, device/samsung/s6810p/device_s6810p.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := s6810
-PRODUCT_NAME := cm_s6810
+PRODUCT_DEVICE := s6810p
+PRODUCT_NAME := cm_s6810p
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-S6810P
 PRODUCT_MANUFACTURER := samsung

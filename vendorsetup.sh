@@ -1,1 +1,1 @@
-add_lunch_combo cm_s6810-userdebug
+add_lunch_combo cm_s6810p-userdebug

@@ -1,1 +1,1 @@
-require board=nevis,nevisp
+require board=nevisp,nevis

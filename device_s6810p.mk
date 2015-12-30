@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product, vendor/samsung/s6810/s6810-vendor.mk)
+$(call inherit-product, vendor/samsung/s6810p/s6810p-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/s6810/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/s6810p/overlay
 
 # MDPI assets
 PRODUCT_AAPT_CONFIG := normal ldpi mdpi nodpi
@@ -18,44 +18,44 @@ TARGET_SCREEN_WIDTH := 320
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/s6810/recovery/init.rhea_ss_nevisp.rc:root/init.rhea_ss_nevisp.rc \
-	device/samsung/s6810/recovery/init.bcm2165x.usb.rc:root/init.bcm2165x.usb.rc \
-	device/samsung/s6810/recovery/init.log.rc:root/init.log.rc \
-	device/samsung/s6810/recovery/init.bt.rc:root/init.bt.rc \
-	device/samsung/s6810/recovery/ueventd.rhea_ss_nevisp.rc:root/ueventd.rhea_ss_nevisp.rc \
-        device/samsung/s6810/recovery/init.recovery.rhea_ss_nevisp.rc:root/init.recovery.rhea_ss_s6810.rc \
-	device/samsung/s6810/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp \
-	device/samsung/s6810/recovery/init.fix.sh:root/init.fix.sh
+	device/samsung/s6810p/recovery/init.rhea_ss_nevisp.rc:root/init.rhea_ss_nevisp.rc \
+	device/samsung/s6810p/recovery/init.bcm2165x.usb.rc:root/init.bcm2165x.usb.rc \
+	device/samsung/s6810p/recovery/init.log.rc:root/init.log.rc \
+	device/samsung/s6810p/recovery/init.bt.rc:root/init.bt.rc \
+	device/samsung/s6810p/recovery/ueventd.rhea_ss_nevisp.rc:root/ueventd.rhea_ss_nevisp.rc \
+        device/samsung/s6810p/recovery/init.recovery.rhea_ss_nevisp.rc:root/init.recovery.rhea_ss_s6810p.rc \
+	device/samsung/s6810p/recovery/fstab.rhea_ss_nevisp:root/fstab.rhea_ss_nevisp \
+	device/samsung/s6810p/recovery/init.fix.sh:root/init.fix.sh
 
 # Prebuilt Kernel Related Stuff - built with arm-eabi-4.6 toolchain
-#LOCAL_KERNEL := device/samsung/s6810/kernel/zImage
+#LOCAL_KERNEL := device/samsung/s6810p/kernel/zImage
 #
 #PRODUCT_COPY_FILES += \
 #    $(LOCAL_KERNEL):kernel \
-#    device/samsung/s6810/kernel/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-#    device/samsung/s6810/kernel/modules/dhd.ko:system/lib/modules/dhd.ko \
-#    device/samsung/s6810/kernel/modules/gspca_main.ko:system/lib/modules/gspca_main.ko \
-#    device/samsung/s6810/kernel/modules/lcd.ko:system/lib/modules/lcd.ko \
-#    device/samsung/s6810/kernel/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
+#    device/samsung/s6810p/kernel/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+#    device/samsung/s6810p/kernel/modules/dhd.ko:system/lib/modules/dhd.ko \
+#    device/samsung/s6810p/kernel/modules/gspca_main.ko:system/lib/modules/gspca_main.ko \
+#    device/samsung/s6810p/kernel/modules/lcd.ko:system/lib/modules/lcd.ko \
+#    device/samsung/s6810p/kernel/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 
 PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-        device/samsung/s6810/prebuilt/media_codecs.xml:system/etc/media_codecs.xml \
-        device/samsung/s6810/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
+        device/samsung/s6810p/codecs/media_codecs.xml:system/etc/media_codecs.xml \
+        device/samsung/s6810p/codecs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Multisim-toggle app © Shubhang Rathore
 #PRODUCT_COPY_FILES += \
-#        device/samsung/s6810/multisim/MultiSIM-Toggle.apk:system/app/MultiSIM-Toggle.apk
+#        device/samsung/s6810pp/multisim/MultiSIM-Toggle.apk:system/app/MultiSIM-Toggle.apk
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/s6810/keylayouts/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
-	device/samsung/s6810/keylayouts/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
-	device/samsung/s6810/keylayouts/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	device/samsung/s6810/keylayouts/Generic.kl:system/usr/keylayout/Generic.kl \
-	device/samsung/s6810/keylayouts/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+	device/samsung/s6810p/keylayouts/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	device/samsung/s6810p/keylayouts/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+	device/samsung/s6810p/keylayouts/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	device/samsung/s6810p/keylayouts/Generic.kl:system/usr/keylayout/Generic.kl \
+	device/samsung/s6810p/keylayouts/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
 
 # Stagefright
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -210,5 +210,5 @@ $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_s6810
-PRODUCT_DEVICE := s6810
+PRODUCT_NAME := full_s6810p
+PRODUCT_DEVICE := s6810p

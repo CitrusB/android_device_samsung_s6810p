@@ -4,7 +4,7 @@ USE_CAMERA_STUB := true
 BOARD_USES_ALSA_AUDIO := true
 
 # inherit from the proprietary version
--include vendor/samsung/s6810/BoardConfigVendor.mk
+-include vendor/samsung/s6810p/BoardConfigVendor.mk
 
 # Legacy MMAP for pre-lollipop blobs
 BOARD_USES_LEGACY_MMAP := true
@@ -66,8 +66,8 @@ BOARD_USE_LEGACY_TOUCHSCREEN := true
 TARGET_PROVIDES_POWER_HAL := true
 
 # Kernel - use arm-eabi-4.6 toolchain to build it
-TARGET_KERNEL_SOURCE := kernel/samsung/s6810
-TARGET_KERNEL_CONFIG := cyanogenmod_s6810_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/s6810p
+TARGET_KERNEL_CONFIG := cyanogenmod_s6810p_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 mem=456M androidboot.console=ttyS1 gpt v3d_mem=67108864 pmem=24M@0x9E800000
 BOARD_KERNEL_BASE := 0x82000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -95,8 +95,8 @@ DEVICE_RESOLUTION := 320x480
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/s6810/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/s6810/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/s6810p/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/s6810p/bluetooth/libbt_vndcfg.txt
 
 # Connectivity - Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
@@ -153,13 +153,13 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/s6810/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/s6810p/ril/
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/s6810/recovery/fstab.rhea_ss_nevisp
+TARGET_RECOVERY_FSTAB := device/samsung/s6810p/recovery/fstab.rhea_ss_nevisp
 BOARD_MDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/s6810/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/s6810p/recovery/recovery_keys.c
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
 # Vold
@@ -175,7 +175,7 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.rhea
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.rhea
 
 # CMHW
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/s6810/cmhw/
+BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/s6810p/cmhw/
 
 # jemalloc causes a lot of random crash on free()
 MALLOC_IMPL := dlmalloc
@@ -185,7 +185,7 @@ TARGET_USES_LOGD := false
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/s6810/sepolicy
+    device/samsung/s6810p/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
@@ -206,15 +206,15 @@ BOARD_SEPOLICY_UNION += \
     vclmk.te
 
 # Board info
-TARGET_BOARD_INFO_FILE := device/samsung/s6810/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/s6810p/board-info.txt
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := nevis,nevisp,s6810,GT-S6810,GT-S6810P
+TARGET_OTA_ASSERT_DEVICE := nevisp,nevis,s6810p,s6810,GT-S6810P,GT-S6810
 
 #TWRP Recovery
 #DEVICE_RESOLUTION := 320x480
-#TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/s6810/kernel/zImage
-#TARGET_RECOVERY_FSTAB = device/samsung/s6810/recovery/twrp.fstab
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/s6810p/kernel/zImage
+#TARGET_RECOVERY_FSTAB = device/samsung/s6810p/recovery/twrp.fstab
 #HAVE_SELINUX := true
 #TW_THEME := portrait_mdpi
 #TW_FLASH_FROM_STORAGE := true
