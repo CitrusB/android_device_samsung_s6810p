@@ -1,1 +1,1 @@
-# android_device_samsung_s6810
+# android_device_samsung_s6810p
